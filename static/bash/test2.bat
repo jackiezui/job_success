@@ -1,0 +1,1 @@
+echo This is test2 file > ../job_success/static/bash/output_test2.txt
