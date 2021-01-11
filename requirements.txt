@@ -1,3 +1,4 @@
 django==3.0.11
 channels==3.0.3
 channels_redis
+django-environ
