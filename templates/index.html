@@ -8,6 +8,7 @@
 </head>
 <body>
 <div class="container mt-5">
+    <h4 class="text-center">Commands List</h4>
     {% for command in commands %}
         <button class="btn btn-primary mr-4" onclick="onExecute('{{ command }}')">{{ command }}</button>
     {% endfor %}
@@ -36,7 +37,8 @@
     }
 </script>
 <script>
-    var socketMonitor;
+    let socketMonitor;
+
     function onWebSocket(command) {
         const chatSocket = new WebSocket(
             'ws://'
